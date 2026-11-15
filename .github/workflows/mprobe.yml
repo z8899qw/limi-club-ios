@@ -1,0 +1,23 @@
+name: mprobe
+on: workflow_dispatch
+jobs:
+  a_linux:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo linux ok
+  b_win:
+    runs-on: windows-latest
+    steps:
+      - run: echo win ok
+  c_mac14:
+    runs-on: macos-14
+    steps:
+      - run: echo mac14 ok
+  d_mac15:
+    runs-on: macos-15
+    steps:
+      - run: echo mac15 ok
+  e_maclatest:
+    runs-on: macos-latest
+    steps:
+      - run: echo maclatest ok
